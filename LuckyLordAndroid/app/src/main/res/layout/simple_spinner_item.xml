@@ -1,0 +1,7 @@
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="@style/spinnerItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:maxLines="1" />

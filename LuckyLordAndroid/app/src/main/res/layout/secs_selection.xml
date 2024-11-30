@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layoutDirection="ltr"
+    android:background="@drawable/bg_04"
+    android:orientation="vertical">
+
+
+    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+        android:text="پسر یا دختر؟"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        android:textDirection="rtl"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_size" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="15">
+        <FrameLayout
+            android:id="@+id/male_secs_choise"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/s_font_size"
+            android:background="@drawable/t_board_c"
+            android:layout_weight="7">
+
+            <ImageView
+                android:id="@+id/result_face_avt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/m_face_1" />
+
+            <ImageView
+                android:id="@+id/result_nose_avt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/m_nose_1" />
+
+            <ImageView
+                android:id="@+id/result_lip_avt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/m_lip_1" />
+
+            <ImageView
+                android:id="@+id/result_eye_avt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/m_eye_1" />
+
+            <ImageView
+                android:id="@+id/result_eyebrow_avt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/m_eyebrow_1" />
+        </FrameLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <FrameLayout
+            android:id="@+id/female_secs_choise"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/s_font_size"
+            android:background="@drawable/t_board_c2"
+            android:layout_weight="7">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:scaleX="-1"
+                app:srcCompat="@drawable/f_face_1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:scaleX="-1"
+                app:srcCompat="@drawable/f_nose_1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:scaleX="-1"
+                app:srcCompat="@drawable/f_lip_1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:scaleX="-1"
+                app:srcCompat="@drawable/f_eye_1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:scaleX="-1"
+                app:srcCompat="@drawable/f_eyebrow_1" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

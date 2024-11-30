@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/row_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_03"
+        android:layout_alignTop="@+id/actual_content"
+        android:layout_alignBottom="@id/actual_content"
+        android:layout_alignLeft="@id/actual_content"
+        android:layout_alignRight="@id/actual_content"
+        />
+    <LinearLayout
+        android:id="@id/actual_content"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/base_row_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.80"
+            android:paddingLeft="30dp"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:orientation="vertical"
+            android:paddingRight="10dp">
+
+            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                android:id="@+id/text_message_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textDirection="rtl"
+                android:textSize="@dimen/s_font_size"
+                android:textStyle="bold" />
+
+            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                android:id="@+id/text_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textDirection="rtl"
+                android:textSize="@dimen/sss_font_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/row_bg_avatar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.20"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <ImageView
+                android:id="@+id/avatar_in_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/b_message" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

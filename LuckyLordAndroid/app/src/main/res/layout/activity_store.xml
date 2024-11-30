@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/t_bg_a"
+    android:weightSum="100"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context="ir.fardan7eghlim.luckylord.views.settings.SettingContactUsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/sky_s"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/c_cloud_c_s"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:paddingBottom="10dp"
+                app:srcCompat="@drawable/c_cloud_c" />
+            <ImageView
+                android:id="@+id/LuckyLord_banner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/t_title" />
+            <ImageView
+                android:id="@+id/c_cloud_a_s"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:paddingBottom="10dp"
+                app:srcCompat="@drawable/c_cloud_a" />
+            <ImageView
+                android:id="@+id/c_cloud_b_s"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:paddingTop="20dp"
+                android:paddingRight="50dp"
+                android:paddingLeft="50dp"
+                android:layout_gravity="bottom"
+                app:srcCompat="@drawable/c_cloud_b" />
+        </FrameLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_r_middle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="85"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:paddingBottom="20dp"
+                android:layout_marginLeft="@dimen/s5_font_size"
+                android:layout_marginRight="@dimen/s5_font_size"
+                android:layout_marginTop="@dimen/s5_font_size"
+                app:srcCompat="@drawable/shelve_b" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/x1_font_size"
+                android:weightSum="100"
+                android:orientation="vertical">
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="15"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/x1_font_size"
+                    android:paddingRight="@dimen/x1_font_size"
+                    android:weightSum="1">
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/x1_font_size"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="فروشگاه"
+                        android:background="@drawable/wooden_board_01"
+                        android:textSize="@dimen/font_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="75"
+                    android:scrollbarSize="10dp"
+                    android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+                    android:layout_marginBottom="@dimen/x1_font_size"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_06"
+                            android:padding="5dp"
+                            android:weightSum="100">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:layout_weight="25"
+                                app:srcCompat="@drawable/shop_set_a" />
+                            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                android:id="@+id/shop_item_a"
+                                android:layout_width="0dp"
+                                android:textDirection="rtl"
+                                android:textStyle="bold"
+                                android:gravity="center_vertical"
+                                android:paddingRight="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="75"
+                                android:textSize="@dimen/s_font_size"
+                                android:layout_marginBottom="@dimen/sss_font_size"
+                                android:maxLines="2"
+                                android:tag="t_a"
+                                android:text="" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_06"
+                            android:padding="5dp"
+                            android:weightSum="100">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:layout_weight="25"
+                                app:srcCompat="@drawable/shop_set_b" />
+                            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                android:id="@+id/shop_item_b"
+                                android:tag="t_b"
+                                android:layout_width="0dp"
+                                android:textDirection="rtl"
+                                android:textStyle="bold"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/s_font_size"
+                                android:layout_marginBottom="@dimen/sss_font_size"
+                                android:maxLines="2"
+                                android:paddingRight="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="75"
+                                android:text="" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_06"
+                            android:padding="5dp"
+                            android:weightSum="100">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:layout_weight="25"
+                                app:srcCompat="@drawable/shop_set_c" />
+                            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                android:id="@+id/shop_item_c"
+                                android:tag="t_c"
+                                android:layout_width="0dp"
+                                android:textDirection="rtl"
+                                android:textStyle="bold"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/s_font_size"
+                                android:layout_marginBottom="@dimen/sss_font_size"
+                                android:maxLines="2"
+                                android:paddingRight="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="75"
+                                android:text="" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_06"
+                            android:padding="5dp"
+                            android:weightSum="100">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:layout_weight="25"
+                                app:srcCompat="@drawable/shop_set_d" />
+                            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                android:id="@+id/shop_item_d"
+                                android:tag="t_d"
+                                android:layout_width="0dp"
+                                android:textDirection="rtl"
+                                android:textStyle="bold"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/s_font_size"
+                                android:layout_marginBottom="@dimen/sss_font_size"
+                                android:maxLines="2"
+                                android:paddingRight="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="75"
+                                android:text="" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_06"
+                            android:padding="5dp"
+                            android:weightSum="100">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:layout_weight="25"
+                                app:srcCompat="@drawable/shop_set_e" />
+                            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                android:id="@+id/shop_item_e"
+                                android:tag="t_e"
+                                android:layout_width="0dp"
+                                android:textDirection="rtl"
+                                android:textStyle="bold"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/s_font_size"
+                                android:layout_marginBottom="@dimen/sss_font_size"
+                                android:maxLines="2"
+                                android:paddingRight="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="75"
+                                android:text="" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_06"
+                            android:padding="5dp"
+                            android:weightSum="100">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:layout_weight="25"
+                                app:srcCompat="@drawable/shop_set_f" />
+                            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                android:id="@+id/shop_item_f"
+                                android:tag="t_f"
+                                android:layout_width="0dp"
+                                android:textDirection="rtl"
+                                android:textStyle="bold"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/s_font_size"
+                                android:layout_marginBottom="@dimen/sss_font_size"
+                                android:maxLines="2"
+                                android:paddingRight="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="75"
+                                android:text="" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_06"
+                            android:padding="5dp"
+                            android:weightSum="100">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:layout_weight="25"
+                                app:srcCompat="@drawable/c_luck_a" />
+                            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                android:id="@+id/shop_item_g"
+                                android:tag="t_g"
+                                android:layout_width="0dp"
+                                android:textDirection="rtl"
+                                android:textStyle="bold"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/s_font_size"
+                                android:layout_marginBottom="@dimen/sss_font_size"
+                                android:maxLines="2"
+                                android:paddingRight="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="75"
+                                android:text="" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_06"
+                            android:padding="5dp"
+                            android:weightSum="100">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:layout_weight="25"
+                                app:srcCompat="@drawable/c_luck_set" />
+                            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                android:id="@+id/shop_item_h"
+                                android:tag="t_h"
+                                android:layout_width="0dp"
+                                android:textDirection="rtl"
+                                android:textStyle="bold"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/s_font_size"
+                                android:layout_marginBottom="@dimen/sss_font_size"
+                                android:maxLines="2"
+                                android:paddingRight="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="75"
+                                android:text="" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <Space
+                                android:id="@+id/shop_down_space"
+                                android:layout_width="wrap_content"
+                                android:layout_height="120dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1_font_size"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/store_up" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1_font_size"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:layout_gravity="bottom"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/t_land_a" />
+            <ImageView
+                android:id="@+id/c_squirrel_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:adjustViewBounds="true"
+                android:paddingLeft="100dp"
+                android:paddingBottom="20dp"
+                app:srcCompat="@drawable/c_rabbit_a" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

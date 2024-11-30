@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    android:background="@drawable/t_bg_c"
+    android:weightSum="100"
+    tools:context="ir.fardan7eghlim.luckylord.views.user.SearchUserActivity">
+    <LinearLayout
+        android:id="@+id/box_search_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_03"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/ss_font_size"
+            android:text="جست و جو">
+            <requestFocus/>
+        </ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/s5_font_size"
+            android:layout_height="@dimen/x1_font_size">
+
+            <ir.fardan7eghlim.luckylord.models.widgets.LuckyEditText
+                android:id="@+id/let_search_box"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_04"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:hint="نام کاربری"
+                android:inputType="text"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/sss_font_size" />
+            <ImageView
+                android:id="@+id/btn_search_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/b_search" />
+        </FrameLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_search_result"
+        android:layout_marginTop="@dimen/s5_font_size"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

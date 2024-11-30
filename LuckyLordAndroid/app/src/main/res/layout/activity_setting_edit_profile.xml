@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="@drawable/t_bg_c"
+    tools:context="ir.fardan7eghlim.luckylord.views.settings.SettingEditProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_03"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="آواتار">
+                    <requestFocus />
+                </ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/result_avt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4">
+
+                        <ImageView
+                            android:id="@+id/result_hair_back_avt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/m_face_1" />
+
+                        <ImageView
+                            android:id="@+id/result_face_avt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/m_face_1" />
+
+                        <ImageView
+                            android:id="@+id/result_nose_avt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/m_nose_1" />
+
+                        <ImageView
+                            android:id="@+id/result_lip_avt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/m_lip_1" />
+
+                        <ImageView
+                            android:id="@+id/result_eye_avt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/m_eye_1" />
+
+                        <ImageView
+                            android:id="@+id/result_eyebrow_avt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/m_eyebrow_1" />
+
+                        <ImageView
+                            android:id="@+id/result_dress_avt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/m_dress_3" />
+
+                        <ImageView
+                            android:id="@+id/result_neckless_avt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/m_neckless_2" />
+
+                        <ImageView
+                            android:id="@+id/result_beard_avt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/m_beard_1" />
+
+                        <ImageView
+                            android:id="@+id/result_earing_avt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/m_earing_1" />
+
+                        <ImageView
+                            android:id="@+id/result_glasses_avt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/m_glasses_1" />
+
+                        <ImageView
+                            android:id="@+id/result_hair_front_avt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/m_hair_1" />
+
+                        <ImageView
+                            android:id="@+id/result_hat_avt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/m_face_1" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+                            android:id="@+id/makeAvatar_btn_sep"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_03"
+                            android:paddingTop="10dp"
+                            android:text=" آواتار " />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/box_tel_sep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_03"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="شماره موبایل" />
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:textSize="14sp"
+                    android:text="لطفا شماره موبایل خود را وارد کنید تا در صورت برنده شدن در قرعه کشی راحت تر با شما تماس بگیریم." />
+
+                <EditText
+                    android:id="@+id/tel_sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/bg_03"
+                    android:gravity="center"
+                    android:hint="09--------"
+                    android:textColorHint="@color/gray"
+                    android:inputType="phone" />
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+                    android:id="@+id/btn_submit_tel_sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_03"
+                    android:textSize="18sp"
+                    android:text="ثبت کن" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/box_email_sep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_03"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ویرایش ایمیل"
+                    android:textSize="20sp" />
+
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="خبرها از قرعه کشی های ویژه رو برات ایمیل می کنیم."
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/email_sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_03"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint=""
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/gray" />
+
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+                    android:id="@+id/btn_edit_email_sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_03"
+                    android:gravity="center"
+                    android:text="ویرایش کن"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/box_birthday_sep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_03"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="تاریخ تولد" />
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:textSize="14sp"
+                    android:text="لطفا تاریخ تولدت رو بگو تا روز تولدت بهت هدیه بدیم" />
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+                    android:id="@+id/btn_birthday_sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:maxWidth="80dp"
+                    android:background="@drawable/bg_03"
+                    android:textSize="18sp"
+                    android:text="توجه،فقط یکبار می تونید انتخاب کنید!!!" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/box_gender_sep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_03"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="دختر یا پسر" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_03_spinner" />
+
+                    <Spinner
+                        android:id="@+id/spn_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </FrameLayout>
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:textSize="14sp"
+                    android:text="توجه کن اگر اینو عوض کنی عکس پروفایلت هم ریست میشه" />
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+                    android:id="@+id/btn_edit_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:maxWidth="80dp"
+                    android:background="@drawable/bg_03"
+                    android:textSize="18sp"
+                    android:text="عوض کن" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/box_password_sep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_03"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="تغییر رمز عبور" />
+                <EditText
+                    android:id="@+id/old_password_sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_03"
+                    android:gravity="center"
+                    android:hint="رمز قبلی"
+                    android:textColorHint="@color/gray"
+                    android:inputType="textPassword"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"/>
+                <EditText
+                    android:id="@+id/new_password_sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/bg_03"
+                    android:gravity="center"
+                    android:hint="رمز جدید"
+                    android:textColorHint="@color/gray"
+                    android:inputType="textPassword"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"/>
+                <EditText
+                    android:id="@+id/new2_password_sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_03"
+                    android:gravity="center"
+                    android:hint="تکرار رمز جدید"
+                    android:textColorHint="@color/gray"
+                    android:inputType="textPassword"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"/>
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+                    android:id="@+id/lb_change_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_03"
+                    android:textSize="18sp"
+                    android:text="عوضش کن" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

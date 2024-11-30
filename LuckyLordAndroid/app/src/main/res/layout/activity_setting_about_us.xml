@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/t_bg_c"
+    android:layoutDirection="ltr"
+    tools:context="ir.fardan7eghlim.luckylord.views.settings.SettingAboutUsActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/t_board_c" />
+
+        <ScrollView
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:paddingRight="40dp"
+                    android:paddingLeft="40dp"
+                    app:srcCompat="@drawable/logo_aboutus" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textDirection="rtl"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:autoLink="web"
+                    android:textColorLink="#842502"
+                    android:text="www.f7e.ir" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/bg_05">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textDirection="rtl"
+                            android:gravity="center"
+                            android:textSize="@dimen/ss_font_size"
+                            android:text="میثم عرب" />
+                        <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textDirection="rtl"
+                            android:gravity="center"
+                            android:textSize="@dimen/s4_font_size"
+                            android:text="مدیر پروژه \n برنامه نویسی موبایل \n برنامه نویسی سرور \n صداگذاری" />
+                        <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textDirection="rtl"
+                            android:gravity="center"
+                            android:textSize="@dimen/s5_font_size"
+                            android:autoLink="web"
+                            android:textColorLink="#842502"
+                            android:text="www.meysamarab.com" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/bg_05">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textDirection="rtl"
+                            android:gravity="center"
+                            android:textSize="@dimen/ss_font_size"
+                            android:text="امیر شریف" />
+                        <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textDirection="rtl"
+                            android:gravity="center"
+                            android:textSize="@dimen/s4_font_size"
+                            android:text="طراحی بازی \n برنامه نویسی موبایل \n گرافیک" />
+                        <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textDirection="rtl"
+                            android:gravity="center"
+                            android:textSize="@dimen/s5_font_size"
+                            android:autoLink="web"
+                            android:textColorLink="#842502"
+                            android:visibility="invisible"
+                            android:text="https://www.instagram.com/amir.sharif.91/" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/bg_05">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textDirection="rtl"
+                            android:gravity="center"
+                            android:textSize="@dimen/ss_font_size"
+                            android:text="هومن میشانی" />
+                        <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textDirection="rtl"
+                            android:gravity="center"
+                            android:textSize="@dimen/s4_font_size"
+                            android:text="برنامه نویسی سرور \n مدیریت محتوا" />
+                        <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textDirection="rtl"
+                            android:gravity="center"
+                            android:textSize="@dimen/s5_font_size"
+                            android:autoLink="web"
+                            android:textColorLink="#842502"
+                            android:visibility="invisible"
+                            android:text="" />
+                    </LinearLayout>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="10"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                >
+                <!--<Space-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="40dp" />-->
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:id="@+id/tv_vrsion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textDirection="rtl"
+                    />
+                <!--<Space-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="40dp" />-->
+            </LinearLayout>
+            </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

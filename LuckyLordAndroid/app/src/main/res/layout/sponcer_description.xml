@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_05"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:id="@+id/description_bg">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/logo_aboutus"
+                    android:id="@+id/descript_avatar"
+                    android:minHeight="100dp"
+                    android:maxHeight="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:adjustViewBounds="true" />
+            </FrameLayout>
+
+            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#2c4807"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/s_font_size"
+                android:textStyle="bold"
+                android:textDirection="rtl"
+                android:id="@+id/tv_title" />
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#2c4807"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/sss_font_size"
+                android:textStyle="bold"
+                android:textDirection="rtl"
+                android:id="@+id/tv_description" />
+            <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="خواندن بیشتر"
+                android:id="@+id/btnOpenLink"
+                android:background="@drawable/bg_01"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"/>
+            <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="بستن"
+                android:id="@+id/btnClose"
+                android:background="@drawable/bg_01"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

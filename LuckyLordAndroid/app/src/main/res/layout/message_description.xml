@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_05"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:id="@+id/description_bg">
+
+            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#2c4807"
+                android:gravity="center"
+                android:textSize="@dimen/s_font_size"
+                android:textStyle="bold"
+                android:textDirection="rtl"
+                android:id="@+id/tv_message_title" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/font_size"/>
+            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#2c4807"
+                android:linksClickable="true"
+                android:textSize="@dimen/ss_font_size"
+                android:textStyle="bold"
+                android:textDirection="rtl"
+                android:id="@+id/tv_message_description" />
+
+            <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_OK"
+                android:id="@+id/btn_message_close"
+                android:background="@drawable/bg_01"
+                android:layout_marginTop="@dimen/ss_font_size"
+                android:layout_marginRight="@dimen/font_size"
+                android:layout_marginLeft="@dimen/font_size"/>
+            <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_delete_message"
+                android:id="@+id/btn_delete_message"
+                android:background="@drawable/bg_01"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/font_size"
+                android:layout_marginLeft="@dimen/font_size"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

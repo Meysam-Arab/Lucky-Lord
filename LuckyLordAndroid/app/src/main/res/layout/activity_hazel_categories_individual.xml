@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/t_bg_c"
+    android:layoutDirection="ltr"
+    tools:context="ir.fardan7eghlim.luckylord.views.hazels.HazelCategoriesActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/slist_of_cats_hc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/list_of_cats_hc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="9" />
+
+
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s5_font_size"
+                    android:layout_marginRight="@dimen/s5_font_size"
+                    android:background="@drawable/btn_empty_02"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/s5_font_size"
+                    android:paddingTop="@dimen/s5_font_size"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:textColor="@color/cream"
+                    android:text="بازی های یک نفره"
+                    android:textSize="@dimen/font_size"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:orientation="horizontal">
+                    <FrameLayout
+                        android:id="@+id/cat_x1_hc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_cat_x1_hc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/cat_guess_word" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar_02"
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:padding="@dimen/font_size"
+                            android:theme="@style/AppTheme.greenAccent"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/cat_y1_hc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_cat_y1_hc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/cat_word_finder" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar_01"
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:padding="@dimen/font_size"
+                            android:theme="@style/AppTheme.greenAccent"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/cat_x_hc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_cat_x_hc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/cat_puzzle_table_01" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar_04"
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:padding="@dimen/font_size"
+                            android:theme="@style/AppTheme.greenAccent"
+                            android:visibility="gone" />
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/cat_y_hc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_cat_y_hc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/cat_puzzle_table_02" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar_03"
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:padding="@dimen/font_size"
+                            android:theme="@style/AppTheme.greenAccent"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:id="@+id/luckyTextView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s5_font_size"
+                    android:layout_marginRight="@dimen/s5_font_size"
+                    android:layout_marginTop="@dimen/s_font_size"
+                    android:background="@drawable/btn_empty_02"
+                    android:gravity="center"
+                    android:textColor="@color/cream"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:paddingBottom="@dimen/s5_font_size"
+                    android:paddingTop="@dimen/s5_font_size"
+                    android:text="سوال و جواب (تک نفره)"
+                    android:textSize="@dimen/font_size"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:orientation="horizontal">
+
+
+                    <FrameLayout
+                        android:id="@+id/cat_z_hc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_cat_z_hc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/cat_puzzle_02" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar_05"
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:padding="@dimen/font_size"
+                            android:theme="@style/AppTheme.greenAccent"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/cat_2_hc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_cat_2_hc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/cat_all_02" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar_06"
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:padding="@dimen/font_size"
+                            android:theme="@style/AppTheme.greenAccent"
+                            android:visibility="gone" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/cat_k_hc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_cat_k_hc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/cat_art_gray" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/cat_g_hc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_cat_g_hc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/cat_poem_gray" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/cat_f_hc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_cat_f_hc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/cat_math_gray" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/cat_b_hc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_cat_b_hc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/cat_history_gray" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/cat_d_hc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_cat_d_hc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/cat_religious_gray" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/cat_h_hc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_cat_h_hc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/cat_sport_gray" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/cat_i_hc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_cat_i_hc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/cat_tech_gray" />
+
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/cat_c_hc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_cat_c_hc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/cat_music_gray" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/cat_l_hc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_cat_l_hc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/cat_medicate_gray" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/cat_a_hc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_cat_a_hc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/cat_information_gray" />
+
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/cat_j_hc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_cat_j_hc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/cat_english_gray" />
+
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/cat_e_hc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_cat_e_hc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/cat_geography_gray" />
+
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/t_bg_b_down" />
+        <ImageView
+            android:id="@+id/btn_come_down"
+            android:layout_width="@dimen/x1_font_size"
+            android:layout_height="@dimen/x1_font_size"
+            android:layout_gravity="bottom"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:rotation="90"
+            android:layout_margin="@dimen/s5_font_size"
+            app:srcCompat="@drawable/btn_arrow_a2" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/t_bg_b_up_2" />
+    </FrameLayout>
+</LinearLayout>

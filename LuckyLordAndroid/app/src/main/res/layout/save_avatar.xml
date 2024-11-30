@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_04"
+    android:id="@+id/option_dialog_bg"
+    android:weightSum="100"
+    android:layout_marginTop="@dimen/x1_font_size"
+    android:layout_marginBottom="@dimen/x1_font_size"
+    android:layout_marginLeft="@dimen/s5_font_size"
+    android:layout_marginRight="@dimen/s5_font_size"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/result_avt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:background="@drawable/t_board_c"
+        android:paddingLeft="@dimen/x1_font_size"
+        android:paddingRight="@dimen/x1_font_size">
+        <ImageView
+            android:id="@+id/result_hair_back_avt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            app:srcCompat="@drawable/m_face_1" />
+        <ImageView
+            android:id="@+id/result_face_avt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/m_face_1" />
+        <ImageView
+            android:id="@+id/result_nose_avt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/m_nose_1" />
+        <ImageView
+            android:id="@+id/result_lip_avt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/m_lip_1" />
+        <ImageView
+            android:id="@+id/result_eye_avt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/m_eye_1" />
+        <ImageView
+            android:id="@+id/result_eyebrow_avt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/m_eyebrow_1" />
+        <ImageView
+            android:id="@+id/result_dress_avt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/m_dress_3" />
+        <ImageView
+            android:id="@+id/result_neckless_avt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/m_neckless_2" />
+        <ImageView
+            android:id="@+id/result_beard_avt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/m_beard_1" />
+        <ImageView
+            android:id="@+id/result_earing_avt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/m_earing_1" />
+        <ImageView
+            android:id="@+id/result_glasses_avt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/m_glasses_1" />
+        <ImageView
+            android:id="@+id/result_hair_front_avt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/m_hair_1" />
+        <ImageView
+            android:id="@+id/result_hat_avt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            app:srcCompat="@drawable/m_face_1" />
+        <ImageView
+            android:id="@+id/result_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:visibility="visible"
+            app:srcCompat="@drawable/t_title_b" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+            android:id="@+id/saveAsImage_avt"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_long_e2"
+            android:layout_marginLeft="@dimen/font_size"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="@dimen/sss_font_size"
+            android:layout_marginBottom="@dimen/sss_font_size"
+            android:textSize="@dimen/sss_font_size"
+            android:textStyle="bold"
+            android:text="ذخیره" />
+        <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+            android:id="@+id/shareAsImage_avt"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_long_e2"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="@dimen/font_size"
+            android:layout_marginTop="@dimen/sss_font_size"
+            android:layout_marginBottom="@dimen/sss_font_size"
+            android:textSize="@dimen/sss_font_size"
+            android:textStyle="bold"
+            android:text="اشتراک" />
+    </LinearLayout>
+
+</LinearLayout>

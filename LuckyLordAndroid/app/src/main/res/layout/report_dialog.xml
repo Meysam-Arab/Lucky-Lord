@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_04"
+    android:layoutDirection="ltr"
+    android:id="@+id/option_dialog_bg"
+    android:orientation="vertical">
+
+
+    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+        android:text="گزارش سوال مشکل دار"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/report_box_dialog"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        android:textDirection="rtl"
+        android:gravity="center"
+        android:textSize="@dimen/font_size" />
+
+    <Spinner
+        android:id="@+id/sp_report_type"
+        android:textDirection="rtl"
+        android:layoutDirection="ltr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ir.fardan7eghlim.luckylord.models.widgets.LuckyEditText
+        android:text=""
+        android:hint="بیشتر توضیح بده..."
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/let_description_report_dialog"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        android:textDirection="rtl"
+        android:gravity="center"
+        android:textSize="@dimen/ss_font_size" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1">
+
+        <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+            android:id="@+id/btn_dialog_report_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_03"
+            android:text="بفرست"
+            android:textColor="#293826"
+            android:textSize="@dimen/s4_font_size" />
+
+        <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+            android:id="@+id/btn_dialog_report_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_03"
+            android:text="بیخیال"
+            android:textColor="#293826"
+            android:textSize="@dimen/s4_font_size" />
+    </LinearLayout>
+
+</LinearLayout>

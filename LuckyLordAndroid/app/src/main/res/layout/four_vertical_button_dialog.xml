@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layoutDirection="ltr"
+    android:background="@drawable/bg_04"
+    android:orientation="vertical">
+
+
+    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+        android:text="لطفا انتخاب کنید"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        android:id="@+id/ltv_four_vertical_title"
+        android:textDirection="rtl"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+            android:text="دکمه شماره 1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_four_vertical_01"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textColor="@color/gray"
+            android:background="@drawable/bg_03"
+            android:layout_marginBottom="2dp"
+            android:maxLines="1"
+            android:layout_weight="1" />
+        <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+            android:text="دکمه شماره 2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_four_vertical_02"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/gray"
+            android:visibility="gone"
+            android:background="@drawable/bg_03"
+            android:layout_marginBottom="2dp"
+            android:maxLines="1"
+            android:layout_weight="1" />
+        <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+            android:text="دکمه شماره 3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_four_vertical_03"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/gray"
+            android:visibility="gone"
+            android:background="@drawable/bg_03"
+            android:layout_marginBottom="2dp"
+            android:maxLines="1"
+            android:layout_weight="1" />
+        <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+            android:text="دکمه شماره 4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_four_vertical_04"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/gray"
+            android:background="@drawable/bg_03"
+            android:layout_marginBottom="2dp"
+            android:maxLines="1"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

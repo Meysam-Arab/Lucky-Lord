@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/t_bg_c"
+    tools:context="ir.fardan7eghlim.luckylord.views.settings.SettingHelpActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/t_board_c" />
+
+        <ScrollView
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/font_size" />
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textDirection="rtl"
+                    android:layout_marginTop="@dimen/s4_font_size"
+                    android:textSize="@dimen/ss_font_size"
+                    android:text="هدف بازی افزایش اطلاعات عمومی و به دست آوردن شانس بیشتر برای بالابردن شانس برنده شدن در قرعه کشی هاست." />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1_font_size"
+                    android:layout_marginTop="@dimen/s4_font_size"
+                    app:srcCompat="@drawable/c_luck_a" />
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textDirection="rtl"
+                    android:layout_marginTop="@dimen/s4_font_size"
+                    android:textSize="@dimen/ss_font_size"
+                    android:text="بازی ها به صورت تکی یا به صورت رقابتی آنلاین هستند.از دکمه های زیر برای ورود به قسمت بازی ها استفاده کنید." />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1_font_size"
+                    android:layout_marginTop="@dimen/s4_font_size"
+                    app:srcCompat="@drawable/btn_long_a" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1_font_size"
+                    android:layout_marginTop="@dimen/s4_font_size"
+                    app:srcCompat="@drawable/btn_long_c" />
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textDirection="rtl"
+                    android:layout_marginTop="@dimen/s4_font_size"
+                    android:textSize="@dimen/ss_font_size"
+                    android:text="با جواب دادن به سوالات علاوه بر کسب شانس، بهت فندق هم داده می شه. سوالات سخت تر، شانس و فندق بیشتری می دن." />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1_font_size"
+                    android:layout_marginTop="@dimen/s4_font_size"
+                    app:srcCompat="@drawable/c_coin_a" />
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textDirection="rtl"
+                    android:layout_marginTop="@dimen/s4_font_size"
+                    android:textSize="@dimen/ss_font_size"
+                    android:text="فندق ها رو می تونی جاهای مختلف بازی مثلا برای گرفتن راهنمای سوالات استفاده کنی.البته ما یه فروشگاه هم داریم که می تونی از اونجا فندق بیشتری خریداری کنی." />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1_font_size"
+                    android:layout_marginTop="@dimen/s4_font_size"
+                    app:srcCompat="@drawable/btn_long_f3" />
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textDirection="rtl"
+                    android:layout_marginTop="@dimen/s4_font_size"
+                    android:textSize="@dimen/ss_font_size"
+                    android:text="داخل دکمه ی زیر لیست قرعه کشی های انجام شده و نشده وجود داره. شما میتونی لیست قرعه کشی ها رو ببینی و اگه دلت خواست داخلشون شرکت کنی. یا اگه قبلا تو قرعه کشی شرکت کرده بودی اسم خودتو داخل لیست برنده ها چک کنی." />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1_font_size"
+                    android:layout_marginTop="@dimen/s4_font_size"
+                    app:srcCompat="@drawable/btn_long_e" />
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textDirection="rtl"
+                    android:layout_marginTop="@dimen/s4_font_size"
+                    android:textSize="@dimen/ss_font_size"
+                    android:text="فندق های رایگان با دیدن فیلم های تبلیغاتی داخل دکمه ی زیر هستن" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1_font_size"
+                    android:layout_marginTop="@dimen/s4_font_size"
+                    app:srcCompat="@drawable/btn_long_d" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/zoom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:paddingBottom="7dip"
+    android:paddingTop="7dip">
+
+    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+        android:id="@+id/zoom_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_weight="9"
+        android:background="@drawable/bg_04"
+        android:gravity="center"
+        android:text=""
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/zoom_img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_weight="9"
+        android:gravity="center"
+        app:srcCompat="@drawable/bg_04" />
+
+    <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+        android:id="@+id/btn_zoom_close"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_04"
+        android:text="بستن" />
+</LinearLayout>

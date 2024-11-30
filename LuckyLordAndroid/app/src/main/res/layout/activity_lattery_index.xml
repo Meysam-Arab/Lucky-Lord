@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/t_bg_c"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="ir.fardan7eghlim.luckylord.views.lattery.LatteryIndexActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:paddingTop="5dp"
+        android:orientation="horizontal">
+
+        <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/ss_font_size"
+            android:textStyle="bold"
+            android:text="لیست قرعه کشی ها" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+        <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+            android:id="@+id/first_btn_li"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_long_e2"
+            android:text="تمام شده ها"
+            android:textColor="@color/creamDarker"
+            android:textSize="@dimen/s4_font_size" />
+        <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+            android:id="@+id/second_btn_li"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_long_e2"
+            android:textColor="@color/creamDarker"
+            android:text="هنوز انجام نشده ها"
+            android:textSize="@dimen/s4_font_size" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/draws_li"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="75"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:paddingTop="5dp"
+        android:orientation="horizontal">
+        <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+            android:id="@+id/third_btn_li"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_long_e2"
+            android:text="می خواهم اسپانسر شوم"
+            android:textColor="@color/creamDarker"
+            android:textSize="@dimen/sss_font_size" />
+    </LinearLayout>
+</LinearLayout>

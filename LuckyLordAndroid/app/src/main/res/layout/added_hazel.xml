@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--meysam - 13960428-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/added_hazel_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            app:srcCompat="@drawable/c_coin_a" />
+
+        <TextView
+            android:id="@+id/added_hazel_amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:textColor="#020100"
+            android:gravity="center"
+            android:text="+99"
+            android:textDirection="ltr"
+            android:textStyle="bold"
+            android:textSize="60sp" />
+    </FrameLayout>
+
+</LinearLayout>

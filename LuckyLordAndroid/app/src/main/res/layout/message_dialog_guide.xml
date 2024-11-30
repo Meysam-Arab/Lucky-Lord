@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_04"
+    android:layoutDirection="ltr"
+    android:layout_marginBottom="@dimen/font_size"
+    android:layout_marginTop="@dimen/font_size"
+    android:id="@+id/option_dialog_bg"
+    android:orientation="vertical">
+
+
+    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_box_dialog"
+        android:layout_marginTop="@dimen/s5_font_size"
+        android:layout_marginBottom="@dimen/s5_font_size"
+        android:layout_weight="1"
+        android:textColor="@color/creamDarker"
+        android:textDirection="rtl"
+        android:gravity="center"
+        android:textSize="@dimen/s_font_size" />
+    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message02_box_dialog"
+        android:layout_marginTop="@dimen/s5_font_size"
+        android:layout_marginBottom="@dimen/s5_font_size"
+        android:textColor="@color/creamDark"
+        android:layout_weight="1"
+        android:textDirection="rtl"
+        android:gravity="center"
+        android:textSize="@dimen/sss_font_size" />
+
+    <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+        android:id="@+id/btn_mess_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_03"
+        android:maxLines="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="btn_dialog_01"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/sss_font_size" />
+
+</LinearLayout>

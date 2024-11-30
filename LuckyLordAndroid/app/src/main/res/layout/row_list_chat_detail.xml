@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:background="@drawable/bg_08"
+    android:id="@+id/ll_mainbox_chat_dtl"
+    android:orientation="horizontal">
+    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+        android:id="@+id/text_box_chat_dtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textDirection="rtl"
+        android:textSize="@dimen/s5_font_size"
+        android:text=""
+        android:textStyle="bold" />
+</LinearLayout>

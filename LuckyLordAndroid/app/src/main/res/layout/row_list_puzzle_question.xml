@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/row_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_03"
+    android:padding="@dimen/s5_font_size"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+        android:id="@+id/question_rlqt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ss_font_size"
+        android:textDirection="rtl"
+        android:text="صورت سوال" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/s4_font_size"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_hate_rlqt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/icon_hate" />
+        <ImageView
+            android:id="@+id/iv_like_rlqt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/icon_like" />
+        <ImageView
+            android:id="@+id/iv_report_rlqt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/icon_report" />
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent" />
+        <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+            android:id="@+id/answer_rlqt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:textDirection="rtl"
+            android:textSize="@dimen/sss_font_size"
+            android:text="جواب سوال" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/t_bg_c"
+    android:weightSum="100"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:context="ir.fardan7eghlim.luckylord.views.user.UserRegisterActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:weightSum="100"
+        android:gravity="left"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_r_middle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:weightSum="100"
+                android:gravity="left"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/LuckyLord_banner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_weight="50"
+                    app:srcCompat="@drawable/t_title" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="70"
+                android:gravity="bottom"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="60"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/t_board_c"
+                    android:weightSum="100"
+                    android:orientation="horizontal">
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15" />
+                    <ScrollView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:scrollbarSize="10dp"
+                        android:layout_weight="70"
+                        android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+                        android:layout_marginBottom="40dp"
+                        android:layout_marginTop="30dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="10dp"
+                                android:weightSum="1">
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="10dp"
+                                android:weightSum="1">
+                                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="ثبت نام"
+                                    android:textSize="@dimen/font_size"
+                                    android:textStyle="bold">
+                                    <requestFocus/>
+                                </ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView>
+                            </LinearLayout>
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.6">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/bg_03_spinner" />
+                                    <Spinner
+                                        android:id="@+id/gender_spnr_r"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/sss_font_size"
+                                        android:textDirection="rtl"
+                                         />
+                                </FrameLayout>
+                                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:textSize="@dimen/sss_font_size"
+                                    android:text="دختری یا پسر؟" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+                                <ir.fardan7eghlim.luckylord.models.widgets.LuckyEditText
+                                    android:id="@+id/et_username_r"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.6"
+                                    android:ems="10"
+                                    android:textSize="@dimen/sss_font_size"
+                                    android:inputType="textPersonName"
+                                    android:hint="حداقل 3 حرف"
+                                    android:text="">
+                                </ir.fardan7eghlim.luckylord.models.widgets.LuckyEditText>
+                                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:textSize="@dimen/sss_font_size"
+                                    android:paddingBottom="@dimen/s4_font_size"
+                                    android:text="چی صدات کنم؟" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <ir.fardan7eghlim.luckylord.models.widgets.LuckyEditText
+                                    android:id="@+id/et_email_r"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.6"
+                                    android:ems="10"
+                                    android:hint="اختیاری"
+                                    android:textSize="@dimen/sss_font_size"
+                                    android:inputType="textEmailAddress"
+                                    android:text="" />
+                                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:textSize="@dimen/sss_font_size"
+                                    android:paddingBottom="@dimen/s4_font_size"
+                                    android:text="ایمیلت چیه؟" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <ir.fardan7eghlim.luckylord.models.widgets.LuckyEditText
+                                    android:id="@+id/et_password_r"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.6"
+                                    android:textSize="@dimen/sss_font_size"
+                                    android:hint="حداقل 5 حرف"
+                                    android:gravity="right"
+                                    android:ems="10"
+                                    android:inputType="textPassword"
+                                    android:text="" />
+                                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:textSize="@dimen/sss_font_size"
+                                    android:paddingBottom="@dimen/s4_font_size"
+                                    android:text="رمزت چی باشه؟" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <ir.fardan7eghlim.luckylord.models.widgets.LuckyEditText
+                                    android:id="@+id/et_password_repeat"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.6"
+                                    android:textSize="@dimen/sss_font_size"
+                                    android:ems="10"
+                                    android:gravity="right"
+                                    android:inputType="textPassword"
+                                    android:text="" />
+                                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:textSize="@dimen/sss_font_size"
+                                    android:paddingBottom="@dimen/s4_font_size"
+                                    android:text="رمز رو تکرار کن" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/bg_01"
+                                android:layout_marginTop="20dp"
+                                android:weightSum="1">
+
+                                <ir.fardan7eghlim.luckylord.models.widgets.LuckyEditText
+                                    android:id="@+id/et_inviteCode_r"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:ems="10"
+                                    android:inputType="number"
+                                    android:textSize="@dimen/sss_font_size"
+                                    android:text="" />
+                                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.6"
+                                    android:textSize="@dimen/sss_font_size"
+                                    android:paddingBottom="@dimen/s4_font_size"
+                                    android:layout_marginBottom="@dimen/s4_font_size"
+                                    android:text="اگه کد دعوت داری،اینجا بزن تا 500 فندق رایگان دریافت کنی" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:gravity="center"
+                                android:paddingTop="10dp"
+                                android:weightSum="1">
+
+                                <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+                                    android:text="ثبت نام"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/btn_long_e2"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_gravity="center"
+                                    android:textSize="@dimen/s_font_size"
+                                    android:layout_margin="10dp"
+                                    android:id="@+id/lb_register"
+                                    android:minWidth="150dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="10dp">
+
+                                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:id="@+id/ltv_login"
+                                    android:textSize="@dimen/sss_font_size"
+                                    android:text="اگر قبلا ثبت نام کرده اید،اینجا کلیک کنید"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp" />
+
+                        </LinearLayout>
+                    </ScrollView>
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/c_owl_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:adjustViewBounds="true"
+                android:paddingRight="20dp"
+                app:srcCompat="@drawable/c_owl_a" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+    </LinearLayout>
+</LinearLayout>

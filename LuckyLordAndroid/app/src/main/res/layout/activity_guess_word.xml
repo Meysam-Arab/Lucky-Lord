@@ -1,0 +1,1183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:background="@drawable/t_bg_b"
+    android:weightSum="100"
+    tools:context="ir.fardan7eghlim.luckylord.views.hazels.GuessWordActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:weightSum="100"
+        android:background="@drawable/wooden_board_02"
+        android:padding="@dimen/s4_font_size"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/btn_sound"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="12"
+            android:paddingRight="1dp"
+            app:srcCompat="@drawable/b_sound_on" />
+        <ImageView
+            android:id="@+id/btn_hints"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="12"
+            android:paddingRight="1dp"
+            app:srcCompat="@drawable/b_hint" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="28" />
+        <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize
+            android:id="@+id/tv_luck_amount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:paddingRight="1dp"
+            android:textColor="@color/colorPrimaryWhite"
+            android:textSize="@dimen/s4_font_size"
+            android:layout_weight="13"
+            android:text="0" />
+        <ImageView
+            android:id="@+id/iv_luck_amount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            app:srcCompat="@drawable/c_luck_a" />
+        <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize
+            android:id="@+id/tv_hazel_amount"
+            android:layout_width="0dp"
+            android:gravity="center_vertical|right"
+            android:paddingRight="1dp"
+            android:textSize="@dimen/s4_font_size"
+            android:textColor="@color/colorPrimaryWhite"
+            android:layout_height="match_parent"
+            android:layout_weight="13"
+            android:text="0" />
+        <ImageView
+            android:id="@+id/iv_hazel_amount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            app:srcCompat="@drawable/c_coin_a" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="88">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="100"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/table_dt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="55">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s_font_size"
+                    android:layout_gravity="bottom"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/t_land_a" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/c_half_tree_a2" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <android.support.v4.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="33"/>
+                    <ImageView
+                        android:id="@+id/c_squirrel_gw"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="57"
+                        android:layout_gravity="bottom"
+                        android:paddingRight="@dimen/x1_font_size"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/c_squirrel_a" />
+                    <android.support.v4.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="100"
+                    android:orientation="vertical">
+                    <android.support.v4.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="33"/>
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/txt_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginRight="@dimen/x1_font_size"
+                        android:layout_weight="20"
+                        android:layout_gravity="right"
+                        android:textColor="@color/creamDarker"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/s_font_size"
+                        android:textStyle="bold"
+                        android:text=""/>
+                    <android.support.v4.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"/>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/cage_gw"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/c_cage_1a" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="10"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/greenLand"
+                android:layout_weight="15"
+                android:weightSum="7"
+                android:gravity="center"
+                android:paddingTop="@dimen/s4_font_size"
+                android:paddingBottom="@dimen/ss_font_size"
+                android:paddingRight="@dimen/font_size"
+                android:paddingLeft="@dimen/font_size"
+                android:orientation="horizontal">
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:id="@+id/ans_06"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/sss_font_size"
+                    android:clickable="false"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:text=""
+                    android:layout_margin="2dp"
+                    android:background="@drawable/diamond_wooden"/>
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:id="@+id/ans_05"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/sss_font_size"
+                    android:clickable="false"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:text=""
+                    android:layout_margin="2dp"
+                    android:background="@drawable/diamond_wooden"/>
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:id="@+id/ans_04"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/sss_font_size"
+                    android:clickable="false"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:text=""
+                    android:layout_margin="2dp"
+                    android:background="@drawable/diamond_wooden"/>
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:id="@+id/ans_03"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/sss_font_size"
+                    android:clickable="false"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:text=""
+                    android:layout_margin="2dp"
+                    android:background="@drawable/diamond_wooden"/>
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:id="@+id/ans_02"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/sss_font_size"
+                    android:clickable="false"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:text=""
+                    android:layout_margin="2dp"
+                    android:background="@drawable/diamond_wooden"/>
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:id="@+id/ans_01"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/sss_font_size"
+                    android:clickable="false"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:text=""
+                    android:layout_margin="2dp"
+                    android:background="@drawable/diamond_wooden"/>
+                <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                    android:id="@+id/ans_00"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/sss_font_size"
+                    android:clickable="false"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryWhite"
+                    android:text=""
+                    android:layout_margin="2dp"
+                    android:background="@drawable/diamond_wooden"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:weightSum="3"
+                android:background="@color/greenLand"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="7"
+                    android:orientation="horizontal">
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_00"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_01"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_02"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_03"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_04"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_05"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_06"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="7"
+                    android:orientation="horizontal">
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_07"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_08"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_09"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_10"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_11"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_12"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_13"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="7"
+                    android:orientation="horizontal">
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_14"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_15"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_16"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_17"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_18"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_19"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_20"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/sss_font_size"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:background="@drawable/diamond_orange"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/windowDown_dt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/newbg_05"
+            android:weightSum="100"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <ScrollView
+                android:id="@+id/windowDown_SV_dt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="91"
+                android:layout_margin="@dimen/s5_font_size">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/gameover_win"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_05_clker"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/s_font_size"
+                            android:layout_marginRight="@dimen/s_font_size"
+                            android:layout_marginTop="@dimen/s5_font_size"
+                            android:background="@drawable/bg_01"
+                            android:orientation="horizontal"
+                            android:padding="2dp"
+                            android:weightSum="100">
+
+                            <ImageView
+                                android:id="@+id/iv_luck_end_window_hlq"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="20"
+                                android:adjustViewBounds="true"
+                                android:padding="5dp"
+                                app:srcCompat="@drawable/c_luck_a" />
+
+                            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                android:id="@+id/endWin_luckAmount"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="30"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="1dp"
+                                android:text="0"
+                                android:textColor="@color/creamDarker"
+                                android:textDirection="ltr"
+                                android:textSize="@dimen/ss_font_size" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="20"
+                                android:adjustViewBounds="true"
+                                android:padding="5dp"
+                                app:srcCompat="@drawable/c_coin_a" />
+
+                            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                android:id="@+id/endWin_hazelAmount"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="30"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="1dp"
+                                android:text="0"
+                                android:textColor="@color/creamDarker"
+                                android:textDirection="ltr"
+                                android:textSize="@dimen/ss_font_size" />
+
+                        </LinearLayout>
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/s5_font_size" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="4dp"
+                            android:weightSum="100">
+                            <FrameLayout
+                                android:id="@+id/fl_doubleHazel"
+                                android:layout_width="match_parent"
+                                android:layout_weight="48"
+                                android:padding="5dp"
+                                android:layout_marginLeft="@dimen/ss_font_size"
+                                android:layout_marginRight="@dimen/ss_font_size"
+                                android:background="@drawable/bg_03"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:id="@+id/endWin_doubleHazel"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="100"
+                                    android:layout_marginLeft="@dimen/s5_font_size"
+                                    android:layout_marginRight="@dimen/s5_font_size"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="15"
+                                        android:adjustViewBounds="true"
+                                        app:srcCompat="@drawable/b_movie" />
+                                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="85"
+                                        android:layout_marginRight="5dp"
+                                        android:gravity="center_vertical"
+                                        android:textStyle="bold"
+                                        android:textSize="@dimen/s4_font_size"
+                                        android:textColor="@color/creamDark"
+                                        android:text="دو برابر کردن جایزه ی فندق" />
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="5dp"
+                            android:weightSum="100">
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="48"
+                                android:padding="5dp"
+                                android:background="@drawable/bg_03"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:id="@+id/endWin_pause"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="10"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="7"
+                                        android:layout_marginRight="5dp"
+                                        android:gravity="center_vertical"
+                                        android:textSize="@dimen/s4_font_size"
+                                        android:textColor="@color/creamDark"
+                                        android:textStyle="bold"
+                                        android:text="صفحه اصلی" />
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:adjustViewBounds="true"
+                                        app:srcCompat="@drawable/b_home" />
+                                </LinearLayout>
+
+                            </FrameLayout>
+
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4" />
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="48"
+                                android:padding="5dp"
+                                android:background="@drawable/bg_03"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:id="@+id/endWin_next"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="10"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:adjustViewBounds="true"
+                                        app:srcCompat="@drawable/b_next_btn" />
+                                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="7"
+                                        android:layout_marginRight="5dp"
+                                        android:gravity="center_vertical"
+                                        android:textStyle="bold"
+                                        android:textSize="@dimen/s4_font_size"
+                                        android:textColor="@color/creamDark"
+                                        android:text="کلمه بعدی" />
+                                </LinearLayout>
+
+                            </FrameLayout>
+                        </LinearLayout>
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/s5_font_size" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="4dp"
+                            android:weightSum="100">
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="48"
+                                android:padding="5dp"
+                                android:layout_marginLeft="@dimen/ss_font_size"
+                                android:layout_marginRight="@dimen/ss_font_size"
+                                android:background="@drawable/bg_03"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:id="@+id/ll_reportWord"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="100"
+                                    android:layout_marginLeft="@dimen/s5_font_size"
+                                    android:layout_marginRight="@dimen/s5_font_size"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="15"
+                                        android:adjustViewBounds="true"
+                                        app:srcCompat="@drawable/icon_report" />
+                                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="85"
+                                        android:layout_marginRight="5dp"
+                                        android:gravity="center_vertical"
+                                        android:textStyle="bold"
+                                        android:textSize="@dimen/s4_font_size"
+                                        android:textColor="@color/creamDark"
+                                        android:text="گزارش کلمه مشکل دار" />
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                        android:id="@+id/word_dt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:layout_marginTop="@dimen/s4_font_size"
+                        android:gravity="center"
+                        android:background="@drawable/bg_04"
+                        android:textSize="@dimen/s_font_size"
+                        android:visibility="gone" />
+
+                    <!--<ListView-->
+                    <!--android:id="@+id/list_questions"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--tools:ignore="MissingConstraints"-->
+                    <!--android:textSize="@dimen/s_font_size"-->
+                    <!--android:visibility="gone"-->
+                    <!--tools:layout_editor_absoluteX="8dp"-->
+                    <!--tools:layout_editor_absoluteY="0dp">-->
+                    <!--</ListView>-->
+
+                    <LinearLayout
+                        android:id="@+id/hints_dt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <LinearLayout
+                            android:id="@+id/hint_btn_dh_remove_additional_cell"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/s5_font_size"
+                            android:background="@drawable/bg_03"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:padding="4dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    app:srcCompat="@drawable/c_coin_a" />
+
+                                <TextView
+                                    android:id="@+id/hint_dh_remove_additional_cell"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="-100"
+                                    android:textColor="@color/creamDarker"
+                                    android:textSize="@dimen/sss_font_size"
+                                    android:textStyle="bold" />
+
+                            </FrameLayout>
+
+                            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                android:id="@+id/hint_txt_dh_remove_additional_cell"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="حدف یک خانه ی اضافی"
+                                android:textColor="@color/creamDarker"
+                                android:textDirection="rtl"
+                                android:textSize="@dimen/ss_font_size" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/hint_btn_dh_remove_additional_cells"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/s5_font_size"
+                            android:background="@drawable/bg_03"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:padding="4dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    app:srcCompat="@drawable/c_coin_a" />
+
+                                <TextView
+                                    android:id="@+id/hint_dh_remove_additional_cells"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="-100"
+                                    android:textColor="@color/creamDarker"
+                                    android:textSize="@dimen/sss_font_size"
+                                    android:textStyle="bold" />
+
+                            </FrameLayout>
+
+                            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                android:id="@+id/hint_txt_dh_remove_additional_cells"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="حدف سه خانه ی اضافی"
+                                android:textColor="@color/creamDarker"
+                                android:textDirection="rtl"
+                                android:textSize="@dimen/ss_font_size" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/hint_btn_dh_ad_remove_additional_cells"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/s5_font_size"
+                            android:background="@drawable/bg_03"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:padding="4dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    app:srcCompat="@drawable/b_movie_b2" />
+
+                            </FrameLayout>
+
+                            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                android:id="@+id/hint_txt_dh_ad_remove_additional_cells"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="حدف سه خانه ی اضافی"
+                                android:textColor="@color/creamDarker"
+                                android:textDirection="rtl"
+                                android:textSize="@dimen/ss_font_size" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:layout_marginTop="@dimen/s_font_size"
+                            android:layout_marginBottom="@dimen/s_font_size"
+                            app:srcCompat="@drawable/bg_line_brown"/>
+
+                        <LinearLayout
+                            android:id="@+id/hint_btn_dh_show_one_letter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/s5_font_size"
+                            android:background="@drawable/bg_03"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:padding="4dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    app:srcCompat="@drawable/c_coin_a" />
+
+                                <TextView
+                                    android:id="@+id/hint_dh_show_one_letter"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="-100"
+                                    android:textColor="@color/creamDarker"
+                                    android:textSize="@dimen/sss_font_size"
+                                    android:textStyle="bold" />
+
+                            </FrameLayout>
+
+                            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="لو دادن یک خانه جواب"
+                                android:textColor="@color/creamDarker"
+                                android:textDirection="rtl"
+                                android:textSize="@dimen/ss_font_size" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/hint_btn_dh_ad_show_one_letter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/s5_font_size"
+                            android:background="@drawable/bg_03"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:padding="4dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    app:srcCompat="@drawable/b_movie_b2" />
+
+                            </FrameLayout>
+
+                            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="لو دادن یک خانه جواب"
+                                android:textColor="@color/creamDarker"
+                                android:textDirection="rtl"
+                                android:textSize="@dimen/ss_font_size" />
+                        </LinearLayout>
+                        <!--<LinearLayout-->
+                            <!--android:id="@+id/hint_btn_dh_show_first_letters"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="@dimen/s5_font_size"-->
+                            <!--android:background="@drawable/bg_05_clker"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--android:weightSum="10">-->
+
+                            <!--<FrameLayout-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:layout_weight="2"-->
+                                <!--android:padding="4dp">-->
+
+                                <!--<ImageView-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:adjustViewBounds="true"-->
+                                    <!--app:srcCompat="@drawable/c_coin_a" />-->
+
+                                <!--<TextView-->
+                                    <!--android:id="@+id/hint_dh_show_first_letters"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:gravity="center"-->
+                                    <!--android:text="-100"-->
+                                    <!--android:textColor="@color/creamDark"-->
+                                    <!--android:textSize="@dimen/sss_font_size"-->
+                                    <!--android:textStyle="bold" />-->
+
+                            <!--</FrameLayout>-->
+
+                            <!--<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:layout_weight="8"-->
+                                <!--android:gravity="center_vertical"-->
+                                <!--android:text="لو دادن اولین خانه جواب ها"-->
+                                <!--android:textColor="@color/creamDarker"-->
+                                <!--android:textDirection="rtl"-->
+                                <!--android:textSize="@dimen/ss_font_size" />-->
+                        <!--</LinearLayout>-->
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:layout_marginTop="@dimen/s_font_size"
+                            android:layout_marginBottom="@dimen/s_font_size"
+                            app:srcCompat="@drawable/bg_line_brown"/>
+
+                        <LinearLayout
+                            android:id="@+id/hint_btn_dh_next_guess_word"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/s5_font_size"
+                            android:background="@drawable/bg_03"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:padding="4dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    app:srcCompat="@drawable/c_coin_a" />
+
+                                <TextView
+                                    android:id="@+id/hint_dh_next_guess_word"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="-100"
+                                    android:textColor="@color/creamDarker"
+                                    android:textSize="@dimen/sss_font_size"
+                                    android:textStyle="bold" />
+
+                            </FrameLayout>
+
+                            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="رد کردن این کلمه"
+                                android:textColor="@color/creamDarker"
+                                android:textDirection="rtl"
+                                android:textSize="@dimen/ss_font_size" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/hint_btn_dh_ad_next_guess_word"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/s5_font_size"
+                            android:background="@drawable/bg_03"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:padding="4dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    app:srcCompat="@drawable/b_movie_b2" />
+
+                            </FrameLayout>
+
+                            <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="رد کردن این کلمه"
+                                android:textColor="@color/creamDarker"
+                                android:textDirection="rtl"
+                                android:textSize="@dimen/ss_font_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+                android:id="@+id/windownClose_dt"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:layout_margin="4dp"
+                android:textSize="@dimen/sss_font_size"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_long_e2"
+                android:paddingLeft="@dimen/x1_font_size"
+                android:paddingRight="@dimen/x1_font_size"
+                android:text="بستن" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

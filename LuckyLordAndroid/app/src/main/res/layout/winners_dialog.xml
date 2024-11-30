@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/option_dialog_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_04"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+
+    <ir.fardan7eghlim.luckylord.models.widgets.LuckyTextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:text=""
+        android:layout_marginBottom="@dimen/s5_font_size"
+        android:layout_marginLeft="@dimen/font_size"
+        android:layout_marginRight="@dimen/font_size"
+        android:layout_marginTop="@dimen/s5_font_size"
+        android:textDirection="rtl"
+        android:textSize="@dimen/s4_font_size"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_wd"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:visibility="gone" />
+
+
+    <ListView
+        android:id="@+id/winner_list_wd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:visibility="gone" />
+
+    <ir.fardan7eghlim.luckylord.models.widgets.LuckyButton
+        android:id="@+id/btn_close_wd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/s5_font_size"
+        android:layout_marginLeft="@dimen/font_size"
+        android:layout_marginRight="@dimen/font_size"
+        android:layout_marginTop="@dimen/s5_font_size"
+        android:layout_weight="10"
+        android:background="@drawable/bg_03"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/s5_font_size"
+        android:paddingRight="@dimen/s5_font_size"
+        android:text="بستن"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/s4_font_size"
+        android:textStyle="bold" />
+
+</LinearLayout>
