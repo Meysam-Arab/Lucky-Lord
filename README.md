@@ -29,6 +29,7 @@ This project was developed in 2022 and is considered an older project. While it 
 
 ## Watch the video
 [![Watch the video](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/Thumbnail.jpeg)](https://www.aparat.com/v/l38f8k6)
+[Download the video on Aparat](https://www.aparat.com/v/l38f8k6)
 
 ## Screenshots
 
