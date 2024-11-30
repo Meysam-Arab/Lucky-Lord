@@ -19,7 +19,7 @@ You can enjoy the Lucky Lord game collection while enhancing your knowledge. Enj
 
 Dive into this enriching gaming experience!
 
-Lucky Lord consists of two projects: a website and an Android app.
+Lucky Lord consists of three projects: a website, a chat server (using websockets and PHP), and an Android app. I placed each of them in their respective directories.
 
 ## Project Status
 **Note:** This project is no longer actively maintained and was last updated in 2020. It may not reflect the latest best practices or technologies.
