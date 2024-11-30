@@ -19,8 +19,23 @@ You can enjoy the Lucky Lord game collection while enhancing your knowledge. Enj
 
 Dive into this enriching gaming experience!
 
+Lucky Lord consists of two projects: a website and an Android app.
+
 ## Project Status
 **Note:** This project is no longer actively maintained and was last updated in 2022. It may not reflect the latest best practices or technologies.
 
 ## Disclaimer
 This project was developed in 2022 and is considered an older project. While it may still be useful for reference, it is not actively maintained or updated.
+
+![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/Untitled.png)
+
+![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/ir.fardan7eghlim.luckylord6.jpg)
+![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/ir.fardan7eghlim.luckylord7.jpg)
+![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/ir.fardan7eghlim.luckylord8.jpg)
+![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/ir.fardan7eghlim.luckylord9.jpg)
+![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/ir.fardan7eghlim.luckylord10.jpg)
+![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/ir.fardan7eghlim.luckylord11.jpg)
+![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/ir.fardan7eghlim.luckylord12.jpg)
+![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/ir.fardan7eghlim.luckylord13.jpg)
+![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/ir.fardan7eghlim.luckylord14.jpg)
+![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/ir.fardan7eghlim.luckylord15.jpg)
