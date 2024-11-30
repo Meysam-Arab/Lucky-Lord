@@ -32,10 +32,9 @@ This project was developed in 2022 and is considered an older project. While it 
 [Download the video on Aparat](https://www.aparat.com/v/l38f8k6)
 
 ## Screenshots
-
+![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/ir.fardan7eghlim.luckylord8.jpg)
 ![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/ir.fardan7eghlim.luckylord6.jpg)
 ![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/ir.fardan7eghlim.luckylord7.jpg)
-![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/ir.fardan7eghlim.luckylord8.jpg)
 ![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/ir.fardan7eghlim.luckylord9.jpg)
 ![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/ir.fardan7eghlim.luckylord10.jpg)
 ![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/ir.fardan7eghlim.luckylord11.jpg)
