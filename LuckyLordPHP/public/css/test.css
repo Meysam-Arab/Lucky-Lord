@@ -1,0 +1,22 @@
+#board div{
+}
+.middlecolumn{
+    background-color: sandybrown;
+}
+
+.bottomBounce{
+    display: block;
+    background-color: deeppink;
+    border-radius: 50%;
+}
+
+.UpBounce{
+    display: block;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.freeSpaceBounce{
+    display: block;
+    border-radius: 50%;
+}
