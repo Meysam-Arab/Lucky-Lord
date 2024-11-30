@@ -27,7 +27,7 @@ Lucky Lord consists of two projects: a website and an Android app.
 ## Disclaimer
 This project was developed in 2022 and is considered an older project. While it may still be useful for reference, it is not actively maintained or updated.
 
-[Download the video](https://github.com/Meysam-Arab/Lucky-Lord/blob/6f3d95662d1bd0667b82925722cd4ba33ca4e26c/images/48de238b4f8237e1c4154d6e400e4f338708138-720p.mp4)
+<div id="63270885722"><script type="text/JavaScript" src="https://www.aparat.com/embed/l38f8k6?data[rnddiv]=63270885722&data[responsive]=yes"></script></div>
 
 
 ![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/ir.fardan7eghlim.luckylord6.jpg)
