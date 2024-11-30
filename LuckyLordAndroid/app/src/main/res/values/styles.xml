@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+    </style>
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+    </style>
+    <style name="CustomProgressBarHorizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/custom_progress_bar_horizontal</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <!--PauseDialog-->
+    <style name="PauseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/left_come_bg</item>
+        <item name="android:windowExitAnimation">@anim/right_out_bg</item>
+    </style>
+
+    <!--bounce-->
+    <style name="BounceDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/BounceDialogAnimation</item>
+    </style>
+
+    <style name="BounceDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/bounce</item>
+        <item name="android:windowExitAnimation">@anim/right_out_bg</item>
+    </style>
+    <style name="AppTheme.greenAccent">
+        <item name="colorAccent">@color/greenLand</item>
+    </style>
+</resources>
