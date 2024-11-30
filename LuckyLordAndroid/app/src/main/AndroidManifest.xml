@@ -1,0 +1,64 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ir.fardan7eghlim.luckylord" android:installLocation="preferExternal">
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+<uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR"/>
+<!--  for perventing device to go to sleep  -->
+<uses-permission android:name="android.permission.WAKE_LOCK"/>
+<!--  for tapcel  -->
+<!--  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />  -->
+<!--  <uses-permission android:name="android.permission.INTERNET" />  -->
+<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+<uses-permission android:name="android.permission.VIBRATE"/>
+<!--  optional  -->
+<!--  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />  -->
+<!--  optional  -->
+<!--  ////////////////////////  -->
+<application android:name=".controllers.AppController" android:allowBackup="true" android:hardwareAccelerated="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme">
+<activity android:name=".views.home.MainActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar">
+<intent-filter>
+<action android:name="android.intent.action.MAIN"/>
+<category android:name="android.intent.category.DEFAULT"/>
+<category android:name="android.intent.category.LAUNCHER"/>
+</intent-filter>
+</activity>
+<activity android:name=".views.user.UserLoginActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.user.UserRegisterActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.user.UserForgetPasswordActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.user.UserRankingListActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.settings.SettingIndexActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.settings.SettingContactUsActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.settings.SettingEditProfileActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.message.MessageIndexActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.lattery.LatteryIndexActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.hazels.HazelLevelQuestionActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+<activity android:name=".views.hazels.HazelCategoriesActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.hazels.HazelCategoriesIndividualActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.hazels.HazelMatchIndexActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.home.StoreActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.user.UserProfileActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.user.MakeAvatarActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.settings.SettingInviteFriendActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.settings.SettingAboutUsActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.settings.SettingHelpActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name="ir.tapsell.sdk.TapsellAdActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+<activity android:name=".views.home.DownloadActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"> </activity>
+<activity android:name=".views.home.FirstPageActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"> </activity>
+<activity android:name=".views.hazels.DarhamTableActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.hazels.GuessWordActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.hazels.FindWordSingleActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.user.FriendListActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.hazels.CrossTableActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.user.SearchUserActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.message.ChatActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.match.UniversalMatchQuestionActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+<activity android:name=".views.match.UniversalMatchResultActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<activity android:name=".views.match.UniversalMatchLoadingActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+<service android:name=".services.ClosingService" android:stopWithTask="false"/>
+<service android:name=".services.DbService" android:enabled="true" android:exported="true"/>
+<service android:name=".services.ChatService" android:enabled="true" android:exported="true"/>
+<activity android:name=".views.match.UniversalMatchCrossTableActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+</application>
+</manifest>
