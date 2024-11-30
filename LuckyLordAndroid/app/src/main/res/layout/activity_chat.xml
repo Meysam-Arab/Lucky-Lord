@@ -1,0 +1,229 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:weightSum="100" android:layoutDirection="ltr" android:background="@drawable/t_bg_a" tools:context="ir.fardan7eghlim.luckylord.views.message.ChatActivity">
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent" android:weightSum="100" android:orientation="horizontal" android:layout_height="match_parent">
+<Space android:layout_width="0dp" android:layout_weight="65" android:layout_height="match_parent"/>
+<LinearLayout android:layout_width="0dp" android:layout_weight="35" android:orientation="vertical" android:weightSum="100" android:layout_height="match_parent">
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:padding="@dimen/s5_font_size" android:background="@drawable/btn_empty_02" android:weightSum="20" android:layout_weight="7">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/onlineStatus" android:layout_width="0dp" android:gravity="center_vertical|right" android:paddingRight="1dp" android:textSize="@dimen/s5_font_size" android:textColor="@color/colorPrimaryWhite" android:layout_height="match_parent" android:layout_weight="13" android:text="آفلاین"/>
+<ImageView android:id="@+id/onlineStatus_icon" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="7" app:srcCompat="@drawable/st_offline"/>
+</LinearLayout>
+<FrameLayout android:id="@+id/result_op_avt" android:layout_width="match_parent" android:paddingRight="@dimen/s4_font_size" android:background="@drawable/t_board_c" android:paddingLeft="@dimen/s4_font_size" android:layout_height="0dp" android:layout_weight="25">
+<ImageView android:id="@+id/result_hair_back_op_avt" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_gravity="center" android:adjustViewBounds="true" android:scaleX="-1" android:visibility="gone" app:srcCompat="@drawable/m_face_1"/>
+<ImageView android:id="@+id/result_face_op_avt" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_gravity="center" android:adjustViewBounds="true" android:scaleX="-1" app:srcCompat="@drawable/m_face_1"/>
+<ImageView android:id="@+id/result_nose_op_avt" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_gravity="center" android:adjustViewBounds="true" android:scaleX="-1" app:srcCompat="@drawable/m_nose_1"/>
+<ImageView android:id="@+id/result_lip_op_avt" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_gravity="center" android:adjustViewBounds="true" android:scaleX="-1" app:srcCompat="@drawable/m_lip_1"/>
+<ImageView android:id="@+id/result_eye_op_avt" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_gravity="center" android:adjustViewBounds="true" android:scaleX="-1" app:srcCompat="@drawable/m_eye_1"/>
+<ImageView android:id="@+id/result_eyebrow_op_avt" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_gravity="center" android:adjustViewBounds="true" android:scaleX="-1" app:srcCompat="@drawable/m_eyebrow_1"/>
+<ImageView android:id="@+id/result_dress_op_avt" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_gravity="center" android:adjustViewBounds="true" android:scaleX="-1" android:visibility="gone" app:srcCompat="@drawable/m_dress_3"/>
+<ImageView android:id="@+id/result_neckless_op_avt" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_gravity="center" android:adjustViewBounds="true" android:scaleX="-1" android:visibility="gone" app:srcCompat="@drawable/m_neckless_2"/>
+<ImageView android:id="@+id/result_beard_op_avt" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_gravity="center" android:adjustViewBounds="true" android:scaleX="-1" android:visibility="gone" app:srcCompat="@drawable/m_beard_1"/>
+<ImageView android:id="@+id/result_earing_op_avt" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_gravity="center" android:adjustViewBounds="true" android:scaleX="-1" android:visibility="gone" app:srcCompat="@drawable/m_earing_1"/>
+<ImageView android:id="@+id/result_glasses_op_avt" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_gravity="center" android:adjustViewBounds="true" android:scaleX="-1" android:visibility="gone" app:srcCompat="@drawable/m_glasses_1"/>
+<ImageView android:id="@+id/result_hair_front_op_avt" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_gravity="center" android:adjustViewBounds="true" android:scaleX="-1" android:visibility="gone" app:srcCompat="@drawable/m_hair_1"/>
+<ImageView android:id="@+id/result_hat_op_avt" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_gravity="center" android:adjustViewBounds="true" android:scaleX="-1" android:visibility="gone" app:srcCompat="@drawable/m_face_1"/>
+<ImageView android:id="@+id/result_anim" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_gravity="center" android:adjustViewBounds="true" android:visibility="gone" app:srcCompat="@drawable/m_face_1"/>
+<TextView android:id="@+id/UserName_mr" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:paddingTop="@dimen/s4_font_size" android:textStyle="bold" android:shadowColor="@color/creamDarker" android:shadowDx="2" android:shadowDy="2" android:shadowRadius="2" android:textColor="@color/cream" android:text="---"/>
+</FrameLayout>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:padding="@dimen/s5_font_size" android:background="@drawable/btn_empty_02" android:weightSum="20" android:layout_weight="7">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/tv_hazel_amount" android:layout_width="0dp" android:gravity="center_vertical|right" android:paddingRight="1dp" android:textSize="@dimen/s4_font_size" android:textColor="@color/colorPrimaryWhite" android:layout_height="match_parent" android:layout_weight="13" android:text="0"/>
+<ImageView android:id="@+id/imv_hazel_amount" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="7" app:srcCompat="@drawable/c_coin_a"/>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:weightSum="100" android:orientation="horizontal" android:layout_height="match_parent">
+<LinearLayout android:layout_width="0dp" android:layout_weight="65" android:orientation="vertical" android:weightSum="100" android:layout_height="match_parent">
+<ListView android:id="@+id/lvl_recent_chat" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="92"/>
+</LinearLayout>
+<LinearLayout android:layout_width="0dp" android:layout_weight="35" android:orientation="vertical" android:weightSum="100" android:layout_height="match_parent">
+<Space android:layout_width="match_parent" android:layout_weight="39" android:layout_height="0dp"/>
+<LinearLayout android:layout_width="match_parent" android:orientation="vertical" android:weightSum="20" android:layout_height="0dp" android:layout_weight="13">
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="8" android:background="@drawable/btn_empty_05" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_weight="12">
+<ImageView android:id="@+id/icon_like" android:layout_width="0dp" android:layout_height="match_parent" android:adjustViewBounds="true" android:scaleType="fitCenter" android:layout_weight="2" app:srcCompat="@drawable/icon_like"/>
+<ImageView android:id="@+id/icon_heart" android:layout_width="0dp" android:layout_height="match_parent" android:adjustViewBounds="true" android:scaleType="fitCenter" android:layout_weight="2" android:padding="1dp" app:srcCompat="@drawable/icon_heart"/>
+<ImageView android:id="@+id/icon_kiss" android:layout_width="0dp" android:layout_height="match_parent" android:adjustViewBounds="true" android:scaleType="fitCenter" android:layout_weight="2" app:srcCompat="@drawable/icon_kiss"/>
+<ImageView android:id="@+id/icon_hate" android:layout_width="0dp" android:layout_height="match_parent" android:adjustViewBounds="true" android:scaleType="fitCenter" android:layout_weight="2" app:srcCompat="@drawable/icon_hate"/>
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:orientation="horizontal" android:layout_height="0dp" android:background="@drawable/btn_empty_05" android:gravity="center" android:layoutDirection="ltr" android:layout_weight="8">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/txt_news_current" android:layout_width="match_parent" android:gravity="center" android:textSize="@dimen/s5_font_size" android:layout_height="match_parent" android:layout_marginRight="3dp" android:layout_marginLeft="3dp" android:textColor="@color/black" android:maxLines="1" android:ellipsize="end"/>
+</LinearLayout>
+</LinearLayout>
+<LinearLayout android:id="@+id/ll_option_box_chat" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:background="@drawable/btn_empty_03" android:weightSum="100" android:layout_weight="40">
+<Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="5"/>
+<LinearLayout android:id="@+id/ll_freeChat" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:background="@drawable/btn_long_e2" android:layout_marginRight="@dimen/s5_font_size" android:layout_marginLeft="@dimen/s5_font_size" android:layout_weight="10">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:layout_width="match_parent" android:gravity="center" android:textSize="@dimen/s5_font_size" android:layout_height="match_parent" android:layout_marginRight="@dimen/s4_font_size" android:textColor="@color/black" android:layout_marginLeft="1dp" android:maxLines="1" android:ellipsize="end" android:layout_weight="8" android:text="رایگان کردن چت"/>
+</LinearLayout>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/s5_font_size" android:layout_marginRight="@dimen/s5_font_size" android:layout_weight="15">
+<ImageView android:id="@+id/iv_sound_music" android:layout_width="0dp" android:layout_weight="20" android:layout_height="match_parent" android:layout_gravity="center" android:adjustViewBounds="true" android:scaleType="fitCenter" android:padding="2dp" app:srcCompat="@drawable/b_sound_mute"/>
+<ImageView android:id="@+id/iv_sound_non_music" android:layout_width="0dp" android:layout_weight="20" android:layout_height="match_parent" android:layout_gravity="center" android:adjustViewBounds="true" android:scaleType="fitCenter" android:visibility="gone" android:padding="2dp" app:srcCompat="@drawable/b_voice"/>
+<ImageView android:id="@+id/iv_home" android:layout_width="0dp" android:layout_weight="20" android:layout_height="match_parent" android:layout_gravity="center" android:adjustViewBounds="true" android:scaleType="fitCenter" android:padding="2dp" app:srcCompat="@drawable/b_home"/>
+<ImageView android:id="@+id/iv_market" android:layout_width="0dp" android:layout_weight="20" android:layout_height="match_parent" android:layout_gravity="center" android:adjustViewBounds="true" android:scaleType="fitCenter" android:padding="2dp" app:srcCompat="@drawable/b_store"/>
+</LinearLayout>
+<ListView android:id="@+id/lvl_recentNews_chat" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginRight="@dimen/s5_font_size" android:layout_marginLeft="@dimen/s5_font_size" android:layout_weight="65"/>
+<Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="5"/>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
+<LinearLayout android:orientation="vertical" android:gravity="bottom" android:weightSum="100" android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:id="@+id/ll_box_for_typing_chat" android:orientation="horizontal" android:layout_width="match_parent" android:layout_weight="8" android:weightSum="100" android:layoutDirection="rtl" android:paddingRight="@dimen/s4_font_size" android:paddingLeft="@dimen/s5_font_size" android:background="@drawable/btn_empty_05" android:layout_height="0dp">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyEditText android:id="@+id/txt_typing" android:layout_width="0dp" android:layout_weight="75" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:gravity="center_vertical" android:maxLength="300" android:textColor="@color/black" android:maxLines="2" android:text=""/>
+<LinearLayout android:id="@+id/ll_sendBTn_chat" android:orientation="horizontal" android:layout_width="0dp" android:layout_weight="25" android:weightSum="25" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:background="@drawable/b_send_2" android:layout_height="match_parent">
+<ImageView android:id="@+id/emj_current_stutus" android:layout_width="0dp" android:layout_weight="20" android:layout_height="match_parent" android:layout_gravity="center" android:paddingTop="@dimen/s5_font_size" android:paddingBottom="5dp" android:adjustViewBounds="true" android:scaleType="fitCenter" app:srcCompat="@drawable/emj_pocker"/>
+<!-- <ImageView -->
+<!-- android:layout_width="0dp" -->
+<!-- android:layout_weight="10" -->
+<!-- android:layout_height="match_parent" -->
+<!-- android:layout_gravity="left" -->
+<!-- android:paddingTop="3dp" -->
+<!-- android:paddingBottom="3dp" -->
+<!-- android:adjustViewBounds="true" -->
+<!-- android:scaleType="fitXY" -->
+<!-- app:srcCompat="@drawable/b_send" /> -->
+</LinearLayout>
+<!-- <ImageView -->
+<!-- android:id="@+id/btn_send_right" -->
+<!-- android:layout_width="@dimen/x1_font_size" -->
+<!-- android:layout_height="match_parent" -->
+<!-- android:layout_gravity="right" -->
+<!-- android:paddingBottom="@dimen/s5_font_size" -->
+<!-- android:paddingTop="@dimen/s5_font_size" -->
+<!-- android:adjustViewBounds="true" -->
+<!-- android:visibility="gone" -->
+<!-- app:srcCompat="@drawable/btn_arrow_a1" /> -->
+</LinearLayout>
+<LinearLayout android:id="@+id/ll_keyboard_chat" android:orientation="vertical" android:layout_width="match_parent" android:visibility="gone" android:layout_height="0dp" android:weightSum="100" android:paddingTop="2dp" android:paddingRight="2dp" android:paddingLeft="2dp" android:background="@drawable/newbg_05" android:layout_weight="40">
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="9" android:layout_weight="25">
+<FrameLayout android:id="@+id/key_1" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_1" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="ص"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_1" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="ض"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_2" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_2" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="ث"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_2" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="\@"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_3" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_3" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="ق"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_3" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="،"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_4" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_4" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="ف"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_4" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="*"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_5" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_5" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="ع"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_5" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="غ"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_6" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_6" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="ه"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_6" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="؛"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_7" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_7" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="خ"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_7" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="/"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_8" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_8" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="ح"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_8" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="\\"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_9" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_9" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="ج"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_9" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="چ"/>
+</FrameLayout>
+</LinearLayout>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="9" android:layout_weight="25">
+<FrameLayout android:id="@+id/key_11" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_11" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="س"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_11" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="ش"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_12" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_12" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="ی"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_12" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="ئ"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_13" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_13" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="ب"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_13" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="("/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_14" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_14" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="ل"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_14" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text=")"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_15" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_15" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="ا"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_15" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="6dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="آ"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_16" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_16" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="ت"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_16" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text=":"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_17" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_17" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="ن"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_17" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="!"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_18" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_18" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="م"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_18" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="؟"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_19" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_19" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="ک"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_19" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="گ"/>
+</FrameLayout>
+</LinearLayout>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="9" android:layout_weight="25">
+<FrameLayout android:id="@+id/key_types" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_types" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:gravity="center" android:text="en"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_21" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_21" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="ط"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_21" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="ظ"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_22" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_22" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="ز"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_22" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="ژ"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_23" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_23" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="ر"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_23" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center_horizontal|top" android:paddingLeft="@dimen/s5_font_size" android:paddingTop="2dp" android:text="ء" android:textSize="@dimen/s4_font_size" android:textStyle="bold"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_24" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_24" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="د"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_24" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="ذ"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_25" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_25" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="پ"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_25" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="."/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_26" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="1">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_b_26" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:paddingRight="@dimen/s5_font_size" android:gravity="center_horizontal|bottom" android:text="و"/>
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:id="@+id/key_s_26" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/s4_font_size" android:textStyle="bold" android:paddingTop="2dp" android:paddingLeft="@dimen/s5_font_size" android:gravity="center_horizontal|top" android:text="ؤ"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_backspace" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="2">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/x1_font_size" android:textStyle="bold" android:gravity="center" android:text="←"/>
+</FrameLayout>
+</LinearLayout>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="100" android:layout_weight="25">
+<FrameLayout android:id="@+id/key_detail" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="15">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/ss_font_size" android:textStyle="bold" android:gravity="center" android:text="./"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_space" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="35">
+<ir.fardan7eghlim.luckylord.models.widgets.LuckyTextViewAutoSize android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="@dimen/font_size" android:textStyle="bold" android:paddingBottom="@dimen/s5_font_size" android:gravity="center" android:text="␣"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_laugh" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="10">
+<ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_gravity="center" android:paddingRight="4dp" android:paddingLeft="4dp" android:scaleType="fitCenter" android:adjustViewBounds="true" app:srcCompat="@drawable/emj_laugh"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_confused" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="10">
+<ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_gravity="center" android:paddingRight="4dp" android:paddingLeft="4dp" android:scaleType="fitCenter" android:adjustViewBounds="true" app:srcCompat="@drawable/emj_confused"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_angry" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="10">
+<ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_gravity="center" android:paddingRight="4dp" android:paddingLeft="4dp" android:scaleType="fitCenter" android:adjustViewBounds="true" app:srcCompat="@drawable/emj_angry"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_sad" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="10">
+<ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_gravity="center" android:paddingRight="4dp" android:paddingLeft="4dp" android:scaleType="fitCenter" android:adjustViewBounds="true" app:srcCompat="@drawable/emj_sad"/>
+</FrameLayout>
+<FrameLayout android:id="@+id/key_pockerFace" android:layout_width="0dp" android:layout_height="match_parent" android:background="@drawable/bg_05_03" android:layout_weight="10">
+<ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_gravity="center" android:paddingRight="4dp" android:paddingLeft="4dp" android:scaleType="fitCenter" android:adjustViewBounds="true" app:srcCompat="@drawable/emj_pocker"/>
+</FrameLayout>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</FrameLayout>
+</LinearLayout>
