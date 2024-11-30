@@ -22,10 +22,10 @@ Dive into this enriching gaming experience!
 Lucky Lord consists of two projects: a website and an Android app.
 
 ## Project Status
-**Note:** This project is no longer actively maintained and was last updated in 2022. It may not reflect the latest best practices or technologies.
+**Note:** This project is no longer actively maintained and was last updated in 2020. It may not reflect the latest best practices or technologies.
 
 ## Disclaimer
-This project was developed in 2022 and is considered an older project. While it may still be useful for reference, it is not actively maintained or updated.
+This project was developed in 2020 and is considered an older project. While it may still be useful for reference, it is not actively maintained or updated.
 
 ## Watch the video
 [![Watch the video](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/Thumbnail.jpeg)](https://meysamarab.com/clips/clip.mp4)
