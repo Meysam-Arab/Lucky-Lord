@@ -1,0 +1,9 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@drawable/bg_05"
+    android:id="@+id/rounded_corners"/>
+<item android:drawable="@drawable/c_lock_b"
+    android:id="@+id/additional_image"
+    android:gravity="center"
+    android:top="5dp"
+    android:bottom="5dp"/>
+</layer-list>

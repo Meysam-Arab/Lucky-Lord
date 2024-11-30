@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <bitmap android:gravity="fill_horizontal|fill_vertical" android:src="@drawable/diamond_wooden2"  />
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_enabled="true">
+        <shape>
+            <padding
+                android:left="@dimen/s5_font_size"
+                android:top="@dimen/s5_font_size"
+                android:right="@dimen/s5_font_size"
+                android:bottom="@dimen/s5_font_size"/>
+        </shape>
+    </item>
+</selector>
