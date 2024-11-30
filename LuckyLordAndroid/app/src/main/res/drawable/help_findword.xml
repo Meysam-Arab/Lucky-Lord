@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/help_findword_a" android:duration="1200" />
+    <item android:drawable="@drawable/help_findword_b" android:duration="500" />
+    <item android:drawable="@drawable/help_findword_c" android:duration="500" />
+    <item android:drawable="@drawable/help_findword_d" android:duration="500" />
+    <item android:drawable="@drawable/help_findword_e" android:duration="200" />
+    <item android:drawable="@drawable/help_findword_f" android:duration="300" />
+    <item android:drawable="@drawable/help_findword_g" android:duration="200" />
+    <item android:drawable="@drawable/help_findword_h" android:duration="300" />
+    <item android:drawable="@drawable/help_findword_i" android:duration="500" />
+    <item android:drawable="@drawable/help_findword_j" android:duration="500" />
+    <item android:drawable="@drawable/help_findword_k" android:duration="2500" />
+</animation-list>
