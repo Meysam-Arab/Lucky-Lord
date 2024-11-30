@@ -1,7 +1,9 @@
+![Lucky Lord Image](https://github.com/Meysam-Arab/Lucky-Lord/blob/main/images/Untitled.png)
+
 # Lucky-Lord
 Unlimited Word and Table Game Collection
 
-You can have fun with the Lucky Lord game collection while enhancing your knowledge. Enjoy a variety of features, including:
+You can enjoy the Lucky Lord game collection while enhancing your knowledge. Enjoy a variety of features, including:
 
 - Test questions, images, and text  
 - Over one hundred thousand questions and counting  
